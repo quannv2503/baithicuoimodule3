@@ -130,7 +130,7 @@ public class ProductService implements IProductService {
 
     public Product getProductById(int id) {
         Product product = null;
-        String query = "{CALL get_product_by_id(?)}";
+        String query = "{CALL get_product_id(?)}";
         try (Connection connection = connect.getConnection();
              CallableStatement callableStatement = connection.prepareCall(query);) {
             callableStatement.setInt(1, id);

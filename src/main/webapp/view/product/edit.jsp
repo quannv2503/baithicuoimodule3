@@ -20,9 +20,6 @@
                     Edit Product
                 </h2>
             </caption>
-            <c:if test="${product!= null}">
-                <input type="hidden" name="id" value="<c:out value='${product.id}' />"/>
-            </c:if>
             <tr>
                 <th> Name:</th>
                 <td>
