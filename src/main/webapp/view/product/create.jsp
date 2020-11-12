@@ -33,7 +33,7 @@
             <tr>
                 <th>quantity:</th>
                 <td>
-                    <input type="text" name="quantity" id="quantity" size="15"/>
+                    <input type="text" name="quantity" id="quantity" size="45"/>
                 </td>
             </tr>
             <tr>

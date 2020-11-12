@@ -5,7 +5,27 @@
     <title>Customer List</title>
 </head>
 <body>
-<h1>Product</h1>
+<style type="text/css">
+    table, th, td {
+        border: 1px solid #ccc;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        text-align: left;
+        padding: 10px;
+    }
+
+    tr:hover {
+        background-color: #ddd;
+        cursor: pointer;
+    }
+</style>
+<a href="/welcome?action=lđ"><h1>Product</h1></a>
 <p>
     <a href="/welcome?action=create">Create new Product</a>
 </p>

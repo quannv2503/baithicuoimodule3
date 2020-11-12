@@ -1,12 +1,12 @@
 service/IProductService.java
  service.IProductService
-model/Category.java
- model.Category
+controller/ServletProduct.java
+ controller.ServletProduct
 connect/Connect.java
  connect.Connect
 model/Product.java
  model.Product
-controller/ServletProduct.java
- controller.ServletProduct
+model/Category.java
+ model.Category
 service/ProductService.java
  service.ProductService

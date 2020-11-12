@@ -6,6 +6,28 @@
     <title>User Management Application</title>
 </head>
 <body>
+<style type="text/css">
+    table, th, td{
+        border:1px solid #868585;
+    }
+    table{
+        border-collapse:collapse;
+        width:100%;
+    }
+    th, td{
+        text-align:left;
+        padding:10px;
+    }
+    table tr:nth-child(odd){
+        background-color:#eee;
+    }
+    table tr:nth-child(even){
+        background-color:white;
+    }
+    table tr:nth-child(1){
+        background-color:skyblue;
+    }
+</style>
 <center>
     <h1>User Management</h1>
     <h2>
@@ -33,7 +55,7 @@
             <tr>
                 <th>quantity:</th>
                 <td>
-                    <input type="text" name="quantity" id="quantity" size="15"/>
+                    <input type="text" name="quantity" id="quantity" size="45"/>
                 </td>
             </tr>
             <tr>
