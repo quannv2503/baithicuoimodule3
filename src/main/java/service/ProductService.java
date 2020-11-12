@@ -57,7 +57,7 @@ public class ProductService implements IProductService {
 
 
     public List<Product> seachByName(String name) {
-        String seach = "select * from product where name=?;";
+        String seach = "select * from product where name like concat('%',?,'%');";
         List<Product> products = new ArrayList<>();
         try (Connection connection = connect.getConnection();
 
