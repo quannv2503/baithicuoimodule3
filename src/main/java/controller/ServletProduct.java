@@ -73,7 +73,7 @@ public class ServletProduct extends HttpServlet {
 
     private void listProduct(HttpServletRequest request, HttpServletResponse response)
             throws SQLException, IOException, ServletException {
-        List<Product> products3 = (List<Product>) request.getAttribute("productList3");
+        Object products3 = request.getAttribute("productList3");
         if (products3 == null) {
 
 
@@ -113,8 +113,8 @@ public class ServletProduct extends HttpServlet {
             throws SQLException, IOException, ServletException {
         String name = request.getParameter("name");
         List<Product> productList3 = productService.seachByName(name);
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/welcome/action?listProduct");
-        request.setAttribute("productList3", productList3);
+        request.setAttribute("productList", productList3);
+        RequestDispatcher dispatcher = request.getRequestDispatcher("view/product/list.jsp");
         dispatcher.forward(request, response);
     }
 
